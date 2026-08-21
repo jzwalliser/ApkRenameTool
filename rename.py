@@ -5,8 +5,7 @@ import traceback
 import argparse
 import pathlib
 
-parser = argparse.ArgumentParser(description="APK Rename Tool: Renames APK files based on their metadata. Supported formats: apk, xapk, apks, apkm. If a file with an unsupported suffix is provided, it will be ignored unless the -e or --filetype option is used.
-")
+parser = argparse.ArgumentParser(description="APK Rename Tool: Renames APK files based on their metadata. Supported formats: apk, xapk, apks, apkm. If a file with an unsupported suffix is provided, it will be ignored unless the -e or --filetype option is used.")
 group = parser.add_mutually_exclusive_group()
 group.add_argument("-d","--dir",default="./",help="Rename items in the specified directory.")
 group.add_argument("-f","--file",help="Rename a single file.")
